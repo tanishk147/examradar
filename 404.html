@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page not found — ExamRadar</title>
+  <meta name="description" content="That page is not on ExamRadar. Head back to the landing page." />
+  <meta name="robots" content="noindex" />
+  <link rel="canonical" href="https://tanishk147.github.io/examradar/" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%2314213d'/><circle cx='50' cy='50' r='30' fill='none' stroke='%23ff6b35' stroke-width='6'/><circle cx='50' cy='50' r='12' fill='%23ff6b35'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f6f3ec;
+      --paper: #fffdf8;
+      --ink: #14213d;
+      --ink-2: #3d4a66;
+      --muted: #6b7489;
+      --line: #e3ddd0;
+      --accent: #ff6b35;
+      --mono: "JetBrains Mono", ui-monospace, monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: "Space Grotesk", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      background-image:
+        linear-gradient(var(--line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--line) 1px, transparent 1px);
+      background-size: 48px 48px;
+      background-position: -1px -1px;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+    nav { background: rgba(246, 243, 236, 0.88); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+    nav .wrap { display: flex; align-items: center; height: 66px; }
+    .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 19px; letter-spacing: -0.02em; }
+    .logo-mark { width: 30px; height: 30px; border-radius: 8px; background: var(--ink); display: grid; place-items: center; position: relative; }
+    .logo-mark::before { content: ""; width: 16px; height: 16px; border: 2.5px solid var(--accent); border-radius: 50%; }
+    .logo-mark::after { content: ""; position: absolute; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+    main { flex: 1; display: grid; place-items: center; padding: 72px 24px; }
+    .card {
+      width: min(560px, 100%);
+      background: var(--paper);
+      border: 2px solid var(--ink);
+      border-radius: 20px;
+      box-shadow: 8px 8px 0 var(--ink);
+      padding: 40px 36px;
+    }
+    .eyebrow { font-family: var(--mono); font-size: 13px; color: var(--accent); margin-bottom: 14px; }
+    h1 { font-size: clamp(36px, 6vw, 52px); line-height: 1.05; letter-spacing: -0.04em; margin-bottom: 14px; }
+    p { color: var(--ink-2); font-size: 18px; max-width: 440px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 28px;
+      padding: 12px 22px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 15px;
+      border: 2px solid var(--ink);
+      background: var(--accent);
+      color: var(--ink);
+      box-shadow: 3px 3px 0 var(--ink);
+    }
+    .btn:hover { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--ink); }
+    footer { padding: 28px 0; font-size: 14px; color: var(--muted); border-top: 1px solid var(--line); }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <a href="https://tanishk147.github.io/examradar/" class="logo"><span class="logo-mark"></span>ExamRadar</a>
+    </div>
+  </nav>
+  <main>
+    <div class="card">
+      <div class="eyebrow">// 404</div>
+      <h1>This page isn't on the radar.</h1>
+      <p>The link doesn't match anything on ExamRadar. The landing page is still where the study plan starts.</p>
+      <a class="btn" href="https://tanishk147.github.io/examradar/">Back home →</a>
+    </div>
+  </main>
+  <footer>
+    <div class="wrap">© <span id="year"></span> ExamRadar</div>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

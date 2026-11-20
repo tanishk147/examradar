@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tanishk147.github.io/examradar/sitemap.xml
